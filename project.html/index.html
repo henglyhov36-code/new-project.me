@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>វិទ្យាល័យព្រែកប្រសព្វ</title>
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class=" font-sans dark:bg-gray-900 bg-white ">
+
+    <!-- Top Header -->
+    <div
+        class="bg-white dark:bg-gray-900 dark:text-white py-2 px-4 flex justify-end items-center gap-4 text-sm text-gray-600">
+        <a href="https://www.facebook.com·" class="hover:text-blue-600">Facebook</a>
+        <a href="https://www.instagram.com·" class="hover:text-pink-600">Instagram</a>
+        <a href="https://web.telegram.org/k/" class="hover:text-sky-500">Telegram</a>
+        <button class="hover:text-blue-600">🔍</button>
+    </div>
+
+    <!-- Main Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900  dark:text-white">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-5 py-3">
+
+            <div class="flex items-center gap-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-Zc8zyTvVzVQu1ulXUa2IL7kftU_GXr1yQln7FiCJw&s=10" alt="logo" class="h-16" />
+
+                <div>
+                    <h1 class="text-2xl font-bold text-blue-500">វិទ្យាល័យព្រែកប្រសព្វ</h1>
+                    <p class="text-sm uppercase tracking-widest text-gray-500">
+                        prekprosop high school
+                    </p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex ml-auto items-center gap-6 font-medium dark:text-white  text-gray-700">
+                <a href="index.html" class="hover:text-blue-600">ទំព័រដើម</a>
+
+            </nav>
+            <div class="ml-auto flex items-center  gap-4 dark:bg-gray-600 bg-gray-50 rounded-full p-1 px-3 mr-3">
+                <button class="buttonToggle"><i class="fa-solid fa-moon iconChange"></i></button>
+            </div>
+
+            <div class="relative inline-block lg:hidden bg-gray-50 dark:bg-gray-600 rounded-full mr-12  text-left">
+                <div class="group">
+                    <button type="button"
+                        class="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium text-black dark:bg-gray-400  hover:bg-gray-100 rounded-full focus:outline-none focus:bg-gray-700">
+                        <i class="fa-solid fa-bars"></i>
+                        <!-- Dropdown arrow -->
+                        <svg class="w-4 h-4 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div
+                        class="absolute left-0 w-40  origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0  group-hover:opacity-100 group-hover:visible transition duration-300">
+                        <div class="py-1">
+                            <a href="index.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ទំព័រដើម</a>
+                            <a href="starbent.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">អំពីស្ថាប័ន</a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <img src="https://asset.cambodia.gov.kh/tourism/2023/11/IMG_3436-300x250.png" alt="kingdom"
+                class="hidden lg:block h-12" />
+        </div>
+    </header>
+
+    <!-- Slider -->
+    <section class="relative h-[500px] overflow-hidden">
+
+        <div class="slide active relative h-full">
+            <img src="/photo_2026-06-19_20-54-48.jpg"
+                class="w-full h-full object-cover" />
+
+            <div class="absolute inset-0 bg-black/40 flex items-end">
+                <div class="bg-sky-900/70  p-6 w-full">
+                    <h2 class="text-2xl text-blue-700 font-bold">«Family 12"A"»</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide relative h-full">
+            <img src="https://www.techoairport.com.kh/tia-backend/cms/1761029173599-6.jpg"
+                class="w-full h-full object-cover" />
+
+            <div class="absolute inset-0 bg-black/40 flex items-end">
+                <div class="bg-sky-900/70 text-white p-6 w-full">
+                    <h2 class="text-2xl font-bold">
+                        វិទ្យាល័យព្រែកប្រសព្វ
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="max-w-7xl mx-auto py-14 px-4">
+
+        <h2 class="text-4xl font-bold text-center text-blue-500 mb-10">
+            កម្រងអនុស្សាវរីយ៍១២"ក"
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div
+                class="bg-white  dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+                <img src="/photo_2026-06-19_21-20-20.jpg"
+                    class="w-full h-64 object-cover" />
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-500">ភ្ជុំធ្វើដំណើរទៅវត្តថ្មី</h3>
+                </div>
+            </div>
+
+            <div
+                class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+                <img src="/photo_2026-06-19_21-20-32.jpg"
+                    class="w-full h-64 object-cover" />
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-500">៤នាក់kip zin</h3>
+                </div>
+            </div>
+
+            <div
+                class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+                <img src="/photo_2026-06-19_20-45-58.jpg"
+                    class="w-full h-64 object-cover" />
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-500">
+                         12"A" Always smos🤪 
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="max-w-7xl mx-auto px-4 pb-14">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg">
+                <img src="/photo_2026-06-19_21-33-57.jpg"
+                    class="w-full h-56 object-cover hover:scale-105 transition duration-300" />
+
+                <div class="p-4">
+                    <h4 class="font-bold text-lg text-blue-500">ទិញនំខួបកំណើតជូនអ្នកគ្រូ​​ (សិទ្ធី)</h4>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg">
+                <img src="/photo_2026-06-19_22-08-08.jpg"
+                    class="w-full h-56 object-cover hover:scale-105 transition duration-300" />
+
+                <div class="p-4">
+                    <h4 class="font-bold text-lg text-blue-500">ទិញនំខួបកំណើតជូនលោកគ្រូ​​ (ភ័ណ្ឌ)</h4>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg">
+                <img src="/photo_2026-06-19_21-46-37.jpg"
+                    class="w-full h-56 object-cover hover:scale-105 transition duration-300" />
+
+                <div class="p-4">
+                    <h4 class="font-bold text-lg text-blue-500">ជួរកំពូលមនុស្ស(ដុតបានគ្រប់រឿង)</h4>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg">
+                <img src="/photo_2026-06-19_21-46-43.jpg"
+                    class="w-full h-56 object-cover hover:scale-105 transition duration-300" />
+
+
+                <div class="p-4">
+                    <h4 class="font-bold text-lg text-blue-500">ជួរកូនក្មេង(លេងដូចក្មេង)</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="bg-gray dark:bg-gray-900 py-16">
+
+        <div class="max-w-5xl mx-auto px-4 text-center">
+
+            <h2 class="text-4xl font-bold text-sky-800 mb-6">
+                ព័ត៌មានថ្មីៗ
+            </h2>
+
+            <p class="text-lg leading-9 dark:text-white text-gray-700">
+                ព្រឹត្តិការណ៍​កម្មវិធីជប់លៀងជួបជុំគ្នា មានថ្ងៃបុណ្យសង្គ្រាន្តនិងថតរូបជុំគ្នាទុកជាអនុស្សាវរីយ៍។
+            </p>
+
+        </div>
+    </section>
+
+
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/photo_2026-06-19_21-55-57.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/photo_2026-06-19_21-56-44.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/photo_2026-06-19_21-56-39.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/photo_2026-06-19_21-56-50.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/photo_2026-06-19_21-56-55.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m15 19-7-7 7-7" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m9 5 7 7-7 7" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+
+    <!-- Video Section -->
+    <section class="max-w-7xl mx-auto px-4 py-14">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <iframe class="w-full h-[350px] rounded-2xl shadow-lg"
+                src="/video_2026-06-19_22-56-13.mp4" allowfullscreen>
+            </iframe>
+
+            <iframe class="w-full h-[350px] rounded-2xl shadow-lg"
+                src="/video_2026-06-19_23-01-50.mp4" allowfullscreen>
+            </iframe>
+
+        </div>
+    </section>
+    <section class="container mx-auto py-16 px-6">
+        <h2 class="text-4xl font-bold text-center text-black dark:text-white mb-10">
+            សកម្មភាពនៅក្នុងសាលាវិទ្យាល័យព្រែកប្រសព្វ
+        </h2>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-10">
+
+            <!-- Card 1 -->
+            <div
+                class="bg-white dark:bg-gray-900 dark:text-blue-500 shadow-lg overflow-hidden hover:scale-105 transition duration-300 rounded-lg">
+
+                <img src="https://scontent.fpnh18-5.fna.fbcdn.net/v/t39.30808-6/483366116_122221425014202482_4651122836770585435_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=S38rEqsqW4sQ7kNvwFYA5cs&_nc_oc=Adpje5Lr7p_9zSOY0DZDPlMhmpTmRFR6gh8vwhPuhSngKsYJVNeZHwaBzVa41fRqr4w&_nc_zt=23&_nc_ht=scontent.fpnh18-5.fna&_nc_gid=81PIy-dxVpqPHgrIE6ms7A&_nc_ss=7b289&oh=00_Af-GpholFHkpbNo7RuOooqhQ6HDNRid1OKRxXCAlwUnCfw&oe=6A3B2C3F"
+                    class="w-full h-72 object-cover rounded-b-lg" alt="Event">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold mb-2 ">
+                        ដាំផ្កាសម្រាប់លំអរ
+                    </h3>
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="bg-white dark:bg-gray-900 dark:text-blue-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                <img src="/photo_2026-06-19_23-12-11.jpg"
+                    class="w-full h-72 object-cover rounded-2xl" alt="Event">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold mb-2">
+                        កាប់ឆ្កា
+                    </h3>
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="bg-white dark:bg-gray-900 dark:text-blue-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                <img src="/photo_2026-06-19_22-08-32.jpg"
+                    class="w-full h-72 object-cover rounded-b-lg" alt="Event">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold mb-2">
+                        ជុសជុលរទេះសម្រាប់បុណ្យសង្គ្រាន្ត
+                    </h3>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="container mx-auto py-16 px-6">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-10">
+
+            <!-- Card 1 -->
+            <div
+                class="bg-white dark:bg-gray-900 dark:text-blue-800 shadow-lg overflow-hidden hover:scale-105 transition duration-300 rounded-lg">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeUzTlzH4Zjm87NswbD8G6Ty8eUJ9ooZ1SB04D1DgRlA&s=10"
+                    class="w-full h-72 object-cover rounded-b-lg" alt="Event">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold mb-2">
+
+                    </h3>
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="bg-white dark:bg-gray-900 dark:text-blue-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa8xTATI5EfemkN_MMsi7n1BzqQm-efkW2p6NeAhPuvA&s=10"
+                    class="w-full h-72 object-cover rounded-2xl" alt="Event">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold mb-2">
+                        ទីតាំងវិទ្យាល័យព្រែកប្រសព្វ
+                    </h3>
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="bg-white dark:bg-gray-900 dark:text-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRetn_bbFd9UikzTGYmvCNx-8R1DF47artVoPurieLqg&s=10"
+                    class="w-full h-72 object-cover rounded-2xl" alt="Event">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold mb-2">
+                       អាសយដ្ឋាន៖ 922P+P85, ព្រែកប្រសព្វ<br>
+                    </h3>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tourism Images -->
+    <section class="max-w-7xl mx-auto px-4 pb-14">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt88MtuhUbuWVUgf3SUuiyN2QseyEJyn_ftYHcGV1Wcw&s=10"
+                class="rounded-2xl h-72 w-full object-cover shadow-lg" />
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_YBUhgbveIltip0N_OUE8qKSkayrtbN3TaD9f4qYEfQ&s=10"
+                class="rounded-2xl h-72 w-full object-cover shadow-lg" />
+
+            <img src="/photo_2026-06-20_00-39-01.jpg"
+                class="rounded-2xl h-72 w-full object-cover shadow-lg" />
+
+            <img src="/photo_2026-06-20_00-38-50.jpg"
+                class="rounded-2xl h-72 w-full object-cover shadow-lg" />
+
+        </div>
+
+    </section>
+        </section>
+        <!-- member -->
+        <section class="dark:bg-gray-900 bg-gray-100  py-8 mx-auto">
+            <div class="max-w-7xl mx-auto px-8 py-4 space-y-16">
+                <h2 class="font-heading font-bold text-black dark:text-blue-600 text-2xl text-center">
+                    User
+                </h2>
+
+                <div class="grid md:grid-cols-3  gap-16">
+                    <div class="space-y-4">
+                        <div>
+                            <img src="/3d103bdd-8efc-453a-8431-037fd3d4c8f5.png" class="mx-auto h-60 w-60  rounded-full xl:w-50 xl:h-50">
+
+                            <h3 class="font-medium dark:text-blue-800 mt-3 text-black text-2xl text-center">
+                                Heng Lyhov
+                            </h3>
+                            <p class="text-gray-500 text-center"></p>
+                        </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-blue-950 text-white container mx-auto mt-10 relative">
+
+            <!-- Main Footer Container -->
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+                <!-- Logo Section -->
+                <div class="flex justify-center md:justify-start rounded-lg ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-Zc8zyTvVzVQu1ulXUa2IL7kftU_GXr1yQln7FiCJw&s=10" alt="Logo" class="">
+                </div>
+
+                <!-- Information Section -->
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">
+                        វិទ្យាល័យព្រែកប្រសព្វ
+                    </h3>
+
+                    <div class="space-y-5 text-gray-300">
+
+                        <!-- Address -->
+                        <div class="flex items-start gap-4">
+                            <i clas s="fa-solid fa-location-dot text-yellow-400 mt-1"></i>
+
+                            <span>
+                               Prek Prasab, Kratie, Cambodia
+                            </span>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-phone text-yellow-400 mt-1"></i>
+
+                            <span>
+                               068 577 167
+                            </span>
+                        </div>
+
+                        <!-- Service -->
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-envelope-open-text text-yellow-400 mt-1"></i>
+
+                            <span>
+                                ppsfacebook5@gmail.com
+                            </span>
+                        </div>
+
+                        <!-- Email 1 -->
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-envelope text-yellow-400 mt-1"></i>
+
+                            <span>
+                                ព័ត៌មានទូទៅ (General Information):
+                                <a href="https://web.facebook.com/profile.php?id=100082961397128&mibextid=ZbWKwL"
+                                    class="text-blue-400 hover:text-blue-300 duration-300">
+                                    pps school
+                                </a>
+                            </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Social Section -->
+                <div class="text-center md:text-left">
+
+                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">
+                        បណ្តាញសង្គម
+                    </h3>
+
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center hover:scale-110 duration-300">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-pink-600 flex items-center justify-center hover:scale-110 duration-300">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-black flex items-center justify-center hover:scale-110 duration-300">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center hover:scale-110 duration-300">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center hover:scale-110 duration-300">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center hover:scale-110 duration-300">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="container mx-auto px-6">
+                <hr class="border-gray-700 my-8">
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-center text-gray-400 text-sm">
+                &copy; ២០២៦ រក្សាសិទ្ធិដោយក្រសួងទេសចរណ៍
+            </p>
+
+            <!-- Back To Top Button -->
+            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+                class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-300 text-black w-14 h-14 rounded-full shadow-2xl text-xl duration-300">
+
+                <i class="fa-solid fa-arrow-up"></i>
+
+            </button>
+
+        </footer>
+        <!-- Flowbite JS -->
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+</body>
+<script>
+    const buttons = document.querySelectorAll(".buttonToggle"); // use class
+    const icons = document.querySelectorAll(".iconChange");
+
+    // Click event for ALL buttons
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            document.documentElement.classList.toggle("dark");
+
+            const isDark = document.documentElement.classList.contains("dark");
+
+            localStorage.theme = isDark ? "dark" : "light";
+
+            icons.forEach(icon => {
+                icon.classList.toggle("fa-moon", !isDark);
+                icon.classList.toggle("fa-sun", isDark);
+            });
+        });
+    });
+
+    // Load saved theme on page start
+    if (localStorage.theme === "dark") {
+        document.documentElement.classList.add("dark");
+
+        icons.forEach(icon => {
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+        });
+    }
+</script>
+
+</html>
