@@ -598,7 +598,7 @@
 
             localStorage.theme = isDark ? "dark" : "light";
 
-            icons.forEach(icon => {
+           icons.forEach(icon => {
                 icon.classList.toggle("fa-moon", !isDark);
                 icon.classList.toggle("fa-sun", isDark);
             });
